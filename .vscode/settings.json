@@ -1,0 +1,11 @@
+{
+  "cSpell.ignorePaths": ["cdk.json"],
+  "cSpell.ignoreRegExpList": ["github.com/.*"],
+  "cSpell.words": [
+    "buildx",
+    "discordbot",
+    "GOARCH",
+    "ldflags",
+    "trimpath"
+  ],
+}
