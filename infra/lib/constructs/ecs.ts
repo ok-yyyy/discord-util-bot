@@ -60,7 +60,6 @@ export class Ecs extends Construct {
       desiredCount: 1,
       assignPublicIp: true,
       securityGroups: [props.securityGroup],
-      taskDefinitionRevision: ecs.TaskDefinitionRevision.LATEST,
       capacityProviderStrategies: [
         {
           capacityProvider: 'FARGATE_SPOT',
