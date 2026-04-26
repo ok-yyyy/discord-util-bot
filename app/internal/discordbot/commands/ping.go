@@ -21,6 +21,15 @@ func (c *Ping) Definition() discord.ApplicationCommandCreate {
 	return discord.SlashCommandCreate{
 		Name:        "ping",
 		Description: "疎通確認",
+		IntegrationTypes: []discord.ApplicationIntegrationType{
+			discord.ApplicationIntegrationTypeGuildInstall,
+			discord.ApplicationIntegrationTypeUserInstall,
+		},
+		Contexts: []discord.InteractionContextType{
+			discord.InteractionContextTypeGuild,
+			discord.InteractionContextTypeBotDM,
+			discord.InteractionContextTypePrivateChannel,
+		},
 	}
 }
 
